@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import styles from './Styles.css';
-import Recipez from './Recipez';
+import Recipe from './Recipe';
 
 
 const Breakfast = () => {
@@ -40,7 +40,7 @@ const Breakfast = () => {
 
       <div className="recipes">
         {recipes.map(recipe => (
-          <Recipez
+          <Recipe
             key={recipe.recipe.label}
             title={recipe.recipe.label}
             calories={recipe.recipe.calories}

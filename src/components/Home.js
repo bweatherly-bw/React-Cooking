@@ -49,6 +49,7 @@ function Home() {
             title={recipe.recipe.label}
             calories={recipe.recipe.calories}
             image={recipe.recipe.image}
+            url={recipe.recipe.url}
             ingredients={recipe.recipe.ingredients} />
         ))}
       </div>
