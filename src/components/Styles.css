@@ -17,10 +17,10 @@
   }
   
   .search-button {
-    background: rgb(145, 14, 125);
+    background: rgb(8, 171, 189);
     border: none;
     padding: 10px 20px;
-    color: white;
+    color: black;
   }
 
   .recipes {

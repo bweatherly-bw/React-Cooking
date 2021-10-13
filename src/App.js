@@ -27,7 +27,7 @@ function App() {
 
 const HomePage = () => (
   <div>
-    <h1 className="HomePageHeading" >Brandon's Recipes</h1>
+    <h1 className="HomePageHeading">Brandon's Recipes</h1>
     <img className="HomePageImage" src={homePageBackground} alt="Spices Image"/>
   </div>
 );
