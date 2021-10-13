@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import homePageBackground from "./components/images/cookingBackground.jpeg";
 import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -27,7 +27,8 @@ function App() {
 
 const HomePage = () => (
   <div>
-    <h1>testing home page</h1>
+    <h1 className="HomePageHeading" >Brandon's Recipes</h1>
+    <img className="HomePageImage" src={homePageBackground} alt="Spices Image"/>
   </div>
 );
 

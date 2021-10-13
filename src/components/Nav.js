@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import navImage from './images/BrandonsLogo.jpeg';
 
 
 const Nav = () => {
@@ -10,10 +11,12 @@ const Nav = () => {
 
   return (
       <nav>
-          <h3>Logo</h3>
+          <Link style={navStyle} to='/'> 
+          <img className="" src={navImage} alt="NavLogo"/>
+          </Link>
           <ul className="nav-Links">
               <Link style={navStyle} to='/Home' > 
-              <li>Home</li>
+              <li>Search</li>
               </Link>
 
               <Link style={navStyle} to='/Breakfast' > 
@@ -29,6 +32,7 @@ const Nav = () => {
               </Link>
 
           </ul>
+          {/* <a href=null>Logo source Logodesign.net</a> */}
       </nav>
   );
 };

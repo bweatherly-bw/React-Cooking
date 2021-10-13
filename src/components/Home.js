@@ -33,8 +33,7 @@ function Home() {
 
   return (
     <section className="home">
-      <h1>Welcome to Brandon's Recipe Finder!</h1>
-      <p>Please use the Search Bar below to search for your next meal!</p>
+      <h2>Please use the Search Bar below to search for your next meal!</h2>
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"
