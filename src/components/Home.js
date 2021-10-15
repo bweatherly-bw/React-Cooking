@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react";
 import Recipe from "./Recipe";
 import styles from './Styles.css';
+import Button from 'react-bootstrap/Button';
 
 function Home() {
   const APP_ID = '33fe170b';
@@ -40,7 +41,7 @@ function Home() {
           type="text"
           value={search}
           onChange={updateSearch} />
-        <button className="search-button" type="submit"> Search </button>
+            <Button className="search-button" type="submit" variant="outline-dark">Search</Button>
       </form>
       <div className="recipes">
         {recipes.map(recipe => (

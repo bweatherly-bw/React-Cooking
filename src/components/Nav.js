@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import navImage from './images/baking_smaller.png';
+import styles from './Styles.css';
+
 
 
 const Nav = () => {
