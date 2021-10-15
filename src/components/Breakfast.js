@@ -36,7 +36,7 @@ const Breakfast = () => {
   
     return (
       <section className="breakfast">
-      <h1>BREAKFAST ITEMS -- Will come back to this design and style later </h1>
+      <h1>Breakfast</h1>
 
       <div className="recipes">
         {recipes.map(recipe => (

@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Recipe = ({title, calories, image, url, ingredients}) => {
     return (
         <div>
-            <h1>{title}</h1>
+            <a href={url}> <h1>{title}</h1> </a>
             <ol>
                 {ingredients.map(ingredient => (
                     <li>{ingredient.text}</li>
                 ))}
             </ol>
-            <a href={url}>URL</a>
-            <p>{calories}</p>
+            {/* Option for Calories  */}
+            {/* <p>{calories}</p> */}
             <img src={image} alt="" />
         </div>
     );

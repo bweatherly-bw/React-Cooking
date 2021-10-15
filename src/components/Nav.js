@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import navImage from './images/BrandonsLogo.jpeg';
+import navImage from './images/baking_smaller.png';
 
 
 const Nav = () => {

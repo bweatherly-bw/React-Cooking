@@ -3,6 +3,24 @@
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   }
   
+  .breakfast {
+    min-width: 100vh;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+  }
+  
+  .dinner {
+    min-width: 100vh;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+  }
+
+  .desserts {
+    min-width: 100vh;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+  }
+  
   .search-form {
     min-height: 10vh;
     display: flex;
