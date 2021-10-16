@@ -14,12 +14,14 @@ const Recipe = ({ title, calories, image, url, ingredients }) => {
     //     <p>{calories}</p>
     //     <img src={image} alt="" />
     // </div>
-
-    <Card style={{ width: "18rem" }}>
+<div className='bootstrapCard'>
+    <Card style={{ width: "24rem" }}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title className="cardTitle">{title}</Card.Title>
+        
         <Card.Text>
+          <h3 className="cardIngredients"> INGREDIENTS: </h3>
           <ol>
             {ingredients.map((ingredient) => (
               <li>{ingredient.text}</li>
@@ -28,9 +30,10 @@ const Recipe = ({ title, calories, image, url, ingredients }) => {
         </Card.Text>
       </Card.Body>
       <Card.Body>
-        <Card.Link href={url}>Wesbite</Card.Link>
+        <Card.Link className="websiteLink" href={url}>Recipe</Card.Link>
       </Card.Body>
     </Card>
+    </div>
   );
 };
 

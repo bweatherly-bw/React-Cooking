@@ -9,7 +9,7 @@ import styles from './Styles.css';
 const Nav = () => {
 
     const navStyle = {
-        color: 'white' 
+        color: 'rgb(8, 171, 189)' 
     };
 
   return (
