@@ -16,7 +16,7 @@ function Home() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&to=30&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
     setRecipes(data.hits);
     console.log(data.hits);
@@ -34,7 +34,7 @@ function Home() {
 
   return (
     <section className="home">
-      <h2>Please use the Search Bar below to search for your next meal!</h2>
+      <h2>Use the search bar to find your next meal...</h2>
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"

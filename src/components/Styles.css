@@ -1,35 +1,45 @@
 .home {
     min-width: 100vh;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;  
   }
   
   .breakfast {
     min-width: 100vh;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
 
   }
   
   .dinner {
     min-width: 100vh;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
 
   }
 
   .desserts {
     min-width: 100vh;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
 
   }
-  
+  body {
+    background-image: url(./images/cookingBackground.jpeg);
+    height: 100%;
+    width: 100%;
+  }
+
   .search-form {
     min-height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: crosshair;
   }
   
   .search-bar {
-    width: 50%;
+    width: 40%;
     border: none;
     padding: 10px;
   }
@@ -54,14 +64,27 @@
   }
 
   .cardIngredients {
-    color: cadetblue;
+    color: rgb(0, 0, 0);
     text-decoration: underline;
   }
 
   .websiteLink {
-    color: rgb(215, 89, 44);
+    color: rgb(8, 171, 189);
+    padding-left: 20px;
   }
 
   .bootstrapCard {
     padding-bottom: 20px;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }

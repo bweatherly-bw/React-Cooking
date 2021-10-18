@@ -2,6 +2,8 @@ import React,{useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import styles from './Styles.css';
 import Recipe from './Recipe';
+import Button from 'react-bootstrap/Button';
+
 
 const Desserts = () => {
   const APP_ID = '33fe170b';
@@ -16,7 +18,7 @@ const Desserts = () => {
   }, []);
 
   const getDesserts = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=Dessert&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=keto-friendly&q=low-carb&to=20&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
     setRecipes(data.hits);
     console.log(data.hits);
@@ -35,7 +37,15 @@ const Desserts = () => {
   
     return (
       <section className="desserts">
-      <h1>Desserts</h1>
+      <h1>Healthy Meals:</h1>
+      <form onSubmit={getSearch} className="search-form">
+        <input
+          className="search-bar"
+          type="text"
+          value={search}
+          onChange={updateSearch} />
+            <Button className="search-button" type="submit" variant="outline-dark">Search</Button>
+      </form>
 
       <div className="recipes">
         {recipes.map(recipe => (

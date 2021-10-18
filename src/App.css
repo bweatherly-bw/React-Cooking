@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+nav {
+  font-size: 20px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -11,15 +13,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(8, 171, 189);
 }
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background: rgb(73, 79,92);
-  color: white;
+  /* background-image: url(./components/images/woodTexture.jpeg); */
+  background-color: rgb(77, 77, 77);
+  color: rgb(8, 171, 189);
 }
 .nav-Links {
   width: 50%;
@@ -36,7 +39,6 @@ nav {
 }
 
 .HomePageHeading {
-  color: black;
-  font-size: 30px;
-
+  color: rgb(8, 171, 189);
+  font-size: 32px;
 }

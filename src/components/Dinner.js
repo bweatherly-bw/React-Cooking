@@ -16,7 +16,7 @@ const Dinner = () => {
   }, []);
 
   const getDinner = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=Dinner&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=American&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
     setRecipes(data.hits);
     console.log(data.hits);
@@ -35,7 +35,7 @@ const Dinner = () => {
   
     return (
       <section className="dinner">
-      <h1>Dinner</h1>
+      <h1>cakeskahsdklfjhaskldf:</h1>
 
       <div className="recipes">
         {recipes.map(recipe => (
