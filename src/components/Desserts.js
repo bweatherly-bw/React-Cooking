@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import styles from './Styles.css';
-import Recipe from './Recipe';
+import HealthyRecipe from './HealthyRecipe';
 import Button from 'react-bootstrap/Button';
 
 
@@ -49,7 +49,7 @@ const Desserts = () => {
 
       <div className="recipes">
         {recipes.map(recipe => (
-          <Recipe
+          <HealthyRecipe
             key={recipe.recipe.label}
             title={recipe.recipe.label}
             calories={recipe.recipe.calories}

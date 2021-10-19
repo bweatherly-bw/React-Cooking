@@ -35,7 +35,7 @@ const Dinner = () => {
   
     return (
       <section className="dinner">
-      <h1>cakeskahsdklfjhaskldf:</h1>
+      <h1>Favorites:</h1>
 
       <div className="recipes">
         {recipes.map(recipe => (
