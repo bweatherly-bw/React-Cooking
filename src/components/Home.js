@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from "react";
 import Recipe from "./Recipe";
-import styles from './Styles.css';
 import Button from 'react-bootstrap/Button';
 
 function Home() {
@@ -12,15 +11,14 @@ function Home() {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
-    getRecipes();
-  }, [query]);
-
-  const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&to=30&app_id=${APP_ID}&app_key=${APP_KEY}`);
-    const data = await response.json();
-    setRecipes(data.hits);
-    console.log(data.hits);
-  };
+    const getRecipes = async () => {
+      const response = await fetch(`https://api.edamam.com/search?q=${query}&to=30&app_id=${APP_ID}&app_key=${APP_KEY}`);
+      const data = await response.json();
+      setRecipes(data.hits);
+      console.log(data.hits);
+    };
+    getRecipes()
+  }, [query])
 
   const updateSearch = e => {
     setSearch(e.target.value);

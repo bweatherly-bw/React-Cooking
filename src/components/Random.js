@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from "react";
-import {Link} from 'react-router-dom';
-import styles from './Styles.css';
+import './Styles.css';
 import Recipe from './Recipe';
 
 
@@ -9,8 +8,8 @@ const Breakfast = () => {
   const APP_KEY = '52626f2cdf88d7903a4f69b64cdcd31d';
 
   const [recipes, setRecipes] = useState([]);
-  const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('');
+  // const [setSearch] = useState('');
+  // const [setQuery] = useState('');
 
   useEffect(() => {
     getBreakfast();
@@ -23,15 +22,15 @@ const Breakfast = () => {
     console.log(data.hits);
   };
 
-  const updateSearch = e => {
-    setSearch(e.target.value);
-  };
+  // const updateSearch = e => {
+  //   setSearch(e.target.value);
+  // };
 
-  const getSearch = e => {
-    e.preventDefault();
-    setQuery(search);
-    setSearch('');
-  };
+  // const getSearch = e => {
+  //   e.preventDefault();
+  //   setQuery(search);
+  //   setSearch('');
+  // };
 
   
     return (

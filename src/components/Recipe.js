@@ -1,25 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 
 const Recipe = ({ key, title, calories, image, url, ingredients }) => {
 
-  const saveToFavs = () => {
-    fetch('https://api.edamam.com/search?q=Random&app_id=33fe170b&app_key=52626f2cdf88d7903a4f69b64cdcd31d' + {key})
-    .then(response => response.json())
-    .then(data => {
-      console.log(data)
-      let favsJSON = localStorage.getItem('favslist');
-      let favslist = JSON.parse(favsJSON);
+  // const saveToFavs = () => {
+  //   fetch('https://api.edamam.com/search?q=Random&app_id=33fe170b&app_key=52626f2cdf88d7903a4f69b64cdcd31d' + {key})
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     console.log(data)
+  //     let favsJSON = localStorage.getItem('favslist');
+  //     let favslist = JSON.parse(favsJSON);
 
-      if (favslist == null) {
-        favslist = [];
-      }
+  //     if (favslist == null) {
+  //       favslist = [];
+  //     }
     
-      favslist.push(data);
-      localStorage.setItem('favslist', JSON.stringify(favslist));    
-    })
-  }
+  //     favslist.push(data);
+  //     localStorage.setItem('favslist', JSON.stringify(favslist));    
+  //   })
+  // }
 
 
 
@@ -31,10 +30,10 @@ const Recipe = ({ key, title, calories, image, url, ingredients }) => {
         <Card.Title className="cardTitle">{title}</Card.Title>
         
         <Card.Text>
-          <h3 className="cardIngredients"> INGREDIENTS: </h3>
-          <ol>
+          <h4 className="cardIngredients"> INGREDIENTS: </h4>
+          <ol className="ingredList">
             {ingredients.map((ingredient) => (
-              <li>{ingredient.text}</li>
+              <li className="listItems">{ingredient.text}</li>
             ))}
           </ol>
         </Card.Text>

@@ -1,6 +1,4 @@
 import React,{useEffect, useState} from "react";
-import {Link} from 'react-router-dom';
-import styles from './Styles.css';
 import HealthyRecipe from './HealthyRecipe';
 import Button from 'react-bootstrap/Button';
 
@@ -11,7 +9,7 @@ const Desserts = () => {
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('');
+  const [setQuery] = useState('');
 
   useEffect(() => {
     getDesserts();
